@@ -6,7 +6,12 @@ let myLeads = [];
 inputButton.addEventListener("click", () => {
   if (inputElement.value != "") {
     myLeads.push(inputElement.value);
-    outputElement.innerHTML += "<li>" + inputElement.value + "</li>";
+    outputElement.innerHTML += `
+      <li>
+        <a href='${inputElement.value}' 
+          target='_blank'>${inputElement.value}
+        </a>
+      </li>`;
     inputElement.value = "";
   }
 });
