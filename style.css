@@ -23,11 +23,17 @@ input {
 button {
   color: white;
   background-color: var(--green);
-  border: none;
+  border: 1px solid var(--green);
   padding: 10px 15px;
   margin-top: 5px;
   font-weight: bold;
   margin-bottom: 5px;
+  width: 150px;
+}
+
+#delete-btn {
+  background-color: white;
+  color: var(--green);
 }
 
 ul {
